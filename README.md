@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Positivus Marketing Website
 
-## Getting Started
+A modern, Figma-accurate marketing website built with **Next.js (App Router)** and **TailwindCSS**.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+- **Next.js** (App Router, TypeScript)
+- **TailwindCSS** (custom config, semantic tokens)
+- **Google Fonts** (Space Grotesk)
+- **Modular Components** (e.g., `ServicesCard`)
+- **Image Optimization** (Next.js `<Image />`)
+
+---
+
+## 🎨 Design & Structure
+- **Pixel-perfect Figma implementation**: All sections, colors, spacing, and typography match the Figma design.
+- **Custom Tailwind config**: Semantic colors, font sizes, border radii, and spacing tokens for maintainability.
+- **Consistent container**: All sections use a shared container for perfect left alignment.
+- **Responsive**: Layout adapts to all screen sizes.
+- **Accessible & Semantic**: Uses correct HTML5 landmarks and heading structure.
+- **Componentized**: Service cards and constants are decoupled for easy reuse and updates.
+
+---
+
+## 📁 Main Features
+- **Header**: Logo, navigation, and CTA.
+- **Hero**: Headline, description, and illustration.
+- **Brands**: Logo row.
+- **Services**: Modular cards, mapped from constants.
+- **CTA**: Large, visually prominent, with illustration overflow.
+- **Footer**: Multi-row, pixel-accurate, with nav, socials, contact, newsletter, and legal links.
+
+---
+
+## 🛠️ Setup & Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 How We Built This
+- **Figma → Code**: All colors, font sizes, and spacings were first implemented inline, then centralized in `tailwind.config.ts` for scalability.
+- **Component Decoupling**: Reusable components (like `ServicesCard`) and constants (brands, services) live in their own files.
+- **Best Practices**: Semantic HTML, accessibility, and responsive design throughout.
+- **Git & Collaboration**: Clean commit history, `.gitignore` for Node/Next, and clear project structure.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+client/
+  ├─ src/
+  │   ├─ app/
+  │   │   ├─ page.tsx         # Main page (all sections)
+  │   │   ├─ layout.tsx       # Global layout & font
+  │   │   ├─ components/
+  │   │   │   └─ home/
+  │   │   │       └─ ServicesCard.tsx
+  │   │   ├─ constants/
+  │   │   │   └─ home.ts          # Brands & services data
+  │   ├─ public/                  # Images, logos, illustrations
+  │   ├─ tailwind.config.ts       # Custom Tailwind theme
+  │   ├─ README.md
+  │   ├─ .gitignore
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
+PRs and suggestions welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## © 2023 Positivus. All Rights Reserved.
