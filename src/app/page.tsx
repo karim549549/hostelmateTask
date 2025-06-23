@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div className="md:flex hidden  items-center gap-[20px]">
               <FooterNavLinks className="mb-0" color="black" underline={false} />
-              <button className="border-1 rounded-xl px-4 py-2 cursor-pointer hover:bg-dark-blue hover:text-white transition-colors focus:outline focus:outline-2 focus:outline-dark-blue" aria-label="Request a quote">Request a quote</button>
+              <button className="border-1 rounded-xl px-4 py-2 cursor-pointer transition-colors focus:outline focus:outline-2 focus:outline-dark-blue" aria-label="Request a quote">Request a quote</button>
             </div>
             <button className="md:hidden" aria-label="Open menu">
               <Menu className="w-6 h-6" />
