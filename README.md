@@ -62,18 +62,28 @@ npm run build
 client/
   ├─ src/
   │   ├─ app/
-  │   │   ├─ page.tsx         # Main page (all sections)
+  │   │   ├─ page.tsx         # Main page (imports all decoupled sections)
   │   │   ├─ layout.tsx       # Global layout & font
-  │   │   ├─ components/
-  │   │   │   └─ home/
-  │   │   │       └─ ServicesCard.tsx
-  │   │   ├─ constants/
-  │   │   │   └─ home.ts          # Brands & services data
-  │   ├─ public/                  # Images, logos, illustrations
-  │   ├─ tailwind.config.ts       # Custom Tailwind theme
+  │   ├─ components/
+  │   │   └─ home/
+  │   │       ├─ HeroSection.tsx      # Hero section (client, animated)
+  │   │       ├─ BrandsSection.tsx    # Brands section (client, animated)
+  │   │       ├─ ServicesSection.tsx  # Services section (client, animated)
+  │   │       ├─ CTASection.tsx       # CTA section (client, animated)
+  │   │       ├─ FooterSection.tsx    # Footer section (client, animated)
+  │   │       ├─ ServicesCard.tsx     # Service card component
+  │   │       ├─ BrandsMarquee.tsx    # Brands marquee component
+  │   │       ├─ FooterNavLinks.tsx   # Footer nav links
+  │   │       ├─ Logo.tsx             # Logo component
+  │   ├─ constants/
+  │   │   └─ home.ts          # Brands & services data
+  │   ├─ public/              # Images, logos, illustrations
+  │   ├─ tailwind.config.ts   # Custom Tailwind theme
   │   ├─ README.md
   │   ├─ .gitignore
 ```
+
+- All major sections are now decoupled as client components in `src/components/home/` for modularity and maintainability.
 
 ---
 
