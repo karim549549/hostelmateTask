@@ -1,7 +1,12 @@
 import Marquee from "react-fast-marquee";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export default function BrandsMarquee({ brands }: { brands: { src: any; alt: string }[] }) {
+interface Brand {
+  src: StaticImageData;
+  alt: string;
+}
+
+export default function BrandsMarquee({ brands }: { brands: Brand[] }) {
   return (
     <Marquee gradient={false} speed={40}  className="w-full">
       <div className="flex items-center gap-8 justify-between w-full">

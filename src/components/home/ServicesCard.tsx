@@ -12,7 +12,6 @@ interface ServicesCardProps {
   bgColor: string;
   borderColor: string;
   buttonTextColor: string;
-  buttonBg: string;
   arrowImg: StaticImageData;
   cardImg: StaticImageData;
   alt: string;
@@ -38,7 +37,6 @@ export default function ServicesCard({
   bgColor,
   borderColor,
   buttonTextColor,
-  buttonBg,
   arrowImg,
   cardImg,
   alt,
