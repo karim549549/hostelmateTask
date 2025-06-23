@@ -83,3 +83,30 @@ PRs and suggestions welcome!
 ---
 
 ## © 2023 Positivus. All Rights Reserved.
+
+---
+
+## 🚧 Future Work
+
+- **Centralize Design Tokens:**
+  - Move all scattered color values and hardcoded pixel values (e.g., spacing, border radius, font sizes) into `tailwind.config.ts` as semantic tokens.
+  - Refactor all components and pages to consume these tokens via Tailwind classes, ensuring consistency and easy theme updates.
+- **Accessibility:**
+  - Continue testing with screen readers and keyboard navigation.
+  - Add ARIA live regions for dynamic content if needed.
+- **Performance:**
+  - Audit bundle size and optimize images further.
+  - Consider using Next.js Image CDN for production.
+- **Design Consistency:**
+  - Review all sections for pixel-perfect alignment with Figma.
+  - Add more semantic HTML where possible (e.g., <figure> for images with captions).
+- **SEO & Metadata:**
+  - Expand Open Graph and Twitter meta tags for all pages.
+  - Add structured data (JSON-LD) for organization and services.
+- **Testing:**
+  - Add unit and integration tests for components.
+- **Other Enhancements:**
+  - Add dark mode support.
+  - Add a custom 404 page.
+  - Implement smooth scroll for anchor links.
+  - Add more micro-interactions and parallax effects.
